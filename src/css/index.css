@@ -42,6 +42,10 @@ h1 {
   line-height: 1.1;
 }
 
+p {
+  margin: 0;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -74,5 +78,16 @@ button:focus-visible {
   }
   button {
     background-color: #dce0e8;
+  }
+}
+
+.group__container {
+  flex-direction: row;
+  display: flex;
+}
+
+@media (min-width: 1000px) {
+  .group__container {
+    flex-direction: row;
   }
 }
