@@ -1,20 +1,18 @@
 import '../css/card.css'
 import '../css/group.css'
 import Card from './profile-card'
-import Profile from '../data/data.js'
 
-const player1 = new Profile("Me")
-
-function CardGroup() {
+function CardGroup({ list }) {
+  console.log('debug:', list)
+  const createCards = list.map((item) => <Card profile={item} />)
   return (
     <div className='card__group'>
       <h2>Group Name</h2>
-
-      <Card
-        profile={player1}
-      />
+      {createCards}
     </div>
   )
 }
+
+// console.log('test', createCards(list))
 
 export default CardGroup
