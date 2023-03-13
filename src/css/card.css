@@ -3,7 +3,14 @@
   border-radius: 5px;
   padding: 10px;
   justify-content: space-between;
-  margin: 1rem;
+  margin: 1rem 0;
+}
+
+.space-between {
+  width: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .card p {

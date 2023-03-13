@@ -5,9 +5,13 @@ function Card({ profile }) {
     <div className='card flex row'>
       <span className='flex'>
         <p className='m-0'>{profile.name}</p>
-        <p className='m-0'>Points: {profile.point}</p>
+        <p className='m-0'>Points: {profile.getPoint()}</p>
       </span>
-      <Score win={profile.win} loss={profile.loss} draw={profile.draw} />
+      <Score
+        win={profile.getWin()}
+        loss={profile.getLoss()}
+        draw={profile.getDraw()}
+      />
     </div>
   )
 }
@@ -15,9 +19,20 @@ function Card({ profile }) {
 function Score({ win, loss, draw }) {
   return (
     <div>
-      <p>win:{win}</p>
-      <p>draw:{draw}</p>
-      <p>loss:{loss}</p>
+      <div className='space-between'>
+        <p>Win:</p>
+        <p>{win}</p>
+      </div>
+
+      <div className='space-between'>
+        <p>Draw:</p>
+        <p>{draw}</p>
+      </div>
+
+      <div className='space-between'>
+        <p>Loss:</p>
+        <p>{loss}</p>
+      </div>
     </div>
   )
 }
