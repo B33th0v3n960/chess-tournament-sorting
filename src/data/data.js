@@ -19,12 +19,12 @@ class Profile {
   getDraw() {
     return this.#draw
   }
-  incDraw(amout) {
+  incDraw() {
     this.#draw += 1
     this.#point = this.#win + this.#draw / 2
   }
 
-  getLoss(){
+  getLoss() {
     return this.#loss
   }
   incLoss() {
