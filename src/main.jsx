@@ -11,17 +11,18 @@ const player1 = new Profile('Me')
 const player2 = new Profile('You')
 const player3 = new Profile('He')
 const list = [player1, player2, player3]
+const groupList = [list, list, list]
+
+const groupListComponent = groupList.map((item, index) => (
+  <CardGroup key={`group-${index}`} list={item} />
+))
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Navbar />
 
-    <div className='group__container'>
-      <CardGroup list={list} />
-      <CardGroup list={list} />
-      <CardGroup list={list} />
-    </div>
+    <div className='group__container'>{groupListComponent}</div>
 
-    <Input />
+    <Input count={4} />
   </React.StrictMode>
 )
