@@ -86,6 +86,10 @@ button:focus-visible {
   display: flex;
 }
 
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 1000px) {
   .group__container {
     flex-direction: row;
