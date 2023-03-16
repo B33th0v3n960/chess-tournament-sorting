@@ -1,4 +1,5 @@
 import '../css/form.css'
+import range from '../data/range'
 
 function Input({ count }) {
   const output = range(1, count).map((item) => (
@@ -13,24 +14,7 @@ function Input({ count }) {
       <input type='text' name={`player-${item}`} className='name__input' />
     </div>
   ))
-  return (
-    <div>
-      {output}
-      <button type='submit'>Submit</button>
-    </div>
-  )
-}
-
-function range(start, stop, step = 1) {
-  if (arguments.length === 1) {
-    stop = start
-    start = 0
-  }
-  const result = []
-  for (let i = start; Math.sign(stop - i) === Math.sign(step); i += step) {
-    result.push(i)
-  }
-  return result
+  return <div>{output}</div>
 }
 
 export default Input
