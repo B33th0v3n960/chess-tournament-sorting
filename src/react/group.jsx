@@ -1,5 +1,4 @@
 import '../css/card.css'
-import '../css/group.css'
 import Card from './profile-card'
 
 function CardGroup({ list }) {
@@ -7,7 +6,7 @@ function CardGroup({ list }) {
     <Card key={item.name} profile={item} />
   ))
   return (
-    <div className='card__group'>
+    <div className='group'>
       <h2>Group Name</h2>
       {createCards}
     </div>
