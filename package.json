@@ -1,5 +1,6 @@
 {
   "name": "chess-tournament-sorting",
+  "main": "index.html",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +13,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "serve": "^14.2.0"
+    "serve": "^14.2.0",
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
