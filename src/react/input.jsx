@@ -1,20 +1,26 @@
 import '../css/form.css'
 import range from '../data/range'
 
-function Input({ count }) {
+export function InputGroup({ count }) {
   const output = range(1, count).map((item) => (
     <div key={`player-name-${item}`} className='mb-1'>
-      <label
+      <Input
+        inputName={`player-${item}`}
+        label={'Name:'}
         key={`player-${item}`}
-        htmlFor={`player-${item}`}
-        className='input__label'
-      >
-        Name:
-      </label>
-      <input type='text' name={`player-${item}`} className='name__input' />
+      />
     </div>
   ))
   return <div>{output}</div>
 }
 
-export default Input
+export function Input({ inputName, label, key, mb = 1 }) {
+  return (
+    <div className={`mb-${mb}`}>
+      <label key={key} htmlFor={inputName} className='input__label'>
+        {label}
+      </label>
+      <input type='text' name={inputName} className='name__input ' />
+    </div>
+  )
+}

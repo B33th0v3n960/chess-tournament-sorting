@@ -86,6 +86,10 @@ button:focus-visible {
   display: flex;
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
