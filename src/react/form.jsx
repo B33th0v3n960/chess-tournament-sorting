@@ -54,10 +54,11 @@ function NameForm() {
           label={'Group Name:'}
           assignKey={`group-${item}`}
           mb={0}
+          assignId={'group-name'}
         />
       </div>
 
-      <InputGroup count={memberCount + 1} />
+      <InputGroup count={memberCount + 1} assignId={`group-${item}`} />
     </div>
   ))
 
