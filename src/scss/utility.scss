@@ -1,0 +1,30 @@
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-justfiy-between {
+  justify-content: space-between;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.group {
+  background-color: $bg-card-dark;
+  padding: 1rem;
+  border-radius: 7px;
+  margin: 1rem;
+}

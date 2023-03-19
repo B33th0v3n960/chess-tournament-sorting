@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import '../css/form.css'
 import { Input, InputGroup } from './input'
 import range from '../data/range'
 
@@ -48,7 +47,7 @@ function NameForm() {
     <div key={`group-name-${item}`} className='group'>
       <h2>Group {item}</h2>
 
-      <div className='bg-sapphire mb-1'>
+      <div className='bg-accent mb-1'>
         <Input
           inputName={`group-${item}`}
           label={'Group Name:'}

@@ -1,4 +1,3 @@
-import '../css/form.css'
 import range from '../data/range'
 
 export function InputGroup({ count, assignId }) {

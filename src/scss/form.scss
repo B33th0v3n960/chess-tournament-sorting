@@ -1,7 +1,4 @@
 .name__input {
-  border: 0;
-  outline: 0;
-
   height: 30px;
   margin: 0 1rem 0 0;
   border-radius: 5px;
@@ -26,8 +23,8 @@
   align-items: center;
 }
 
-.bg-sapphire {
-  background: #7dc4e4;
+.bg-accent {
+  background-color: $bg-input-dark;
   padding: 0.5rem;
   border-radius: 7px;
 }

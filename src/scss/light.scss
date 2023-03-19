@@ -1,0 +1,17 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: $bg-light;
+    color: $font-color-dark;
+  }
+
+  input,
+  .card,
+  .bg-accent {
+    background-color: $bg-input-light;
+  }
+
+  button,
+  .group {
+    background-color: $bg-btn-light;
+  }
+}

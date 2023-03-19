@@ -1,14 +1,12 @@
-import '../css/navbar.css'
-
 function Navbar() {
   return (
-    <div className='navbar'>
-      <nav>Chess Tournament Sorting</nav>
+    <nav className='navbar'>
+      <h1>Chess Tournament Sorting</h1>
 
-      <button className='navbar__btn' type='submit'>
+      <button className='clear__btn' type='submit'>
         Clear All
       </button>
-    </div>
+    </nav>
   )
 }
 

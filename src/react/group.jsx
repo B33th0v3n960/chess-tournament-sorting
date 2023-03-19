@@ -1,4 +1,3 @@
-import '../css/card.css'
 import Card from './profile-card'
 
 function CardGroup({ list, groupName = 'Group Name' }) {

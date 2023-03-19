@@ -1,8 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
-import './css/index.css'
-
+import './scss/index.scss'
 import Navbar from './react/navbar'
 import NameForm from './react/form'
 import BodyContent from './react/generate'
